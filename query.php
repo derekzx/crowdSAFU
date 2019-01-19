@@ -11,7 +11,7 @@
         include "404.html";
     }
     else {
-        $rep_file = fopen($chain.'Rep.json', "r+");
+        $rep_file = $file;
         $json_data = file_get_contents($rep_file);
         $arr_data = json_decode($json_data, true);
         $score = $arr_data[$address]["score"];

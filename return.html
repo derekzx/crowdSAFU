@@ -125,7 +125,7 @@
             <li class="breadcrumb-item">
               <a href="#">Dashboard</a>
             </li>
-            <li class="breadcrumb-item active">Overview</li>
+            <li class="breadcrumb-item active"> <?php printf($address);?></li>
           </ol>
 
           <div class="col-xl-9 mx-5"></div>
@@ -136,20 +136,36 @@
               <div class="col-xl-9 mx-5"></div>
               <div class="col-xl-9 mx-5"></div>
 
-              
-              <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                  <div class="row">
-                      <div class="col-xl-9 mx-auto">
-                        <h1 class="mb-5">Address: <?php print($address)></h1>
-                      </div>
-                  </div>
+              <div class="card mb-3">
+                  <div class="card-body">
+              <div class="table-hover">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                  <thead>
+                    <th>Ethereum Address</th>
+                    <th><?php printf($address);?></th>
+                  </thead>
+                  <tr>
+                    <td>Score</td>
+                    <td><?php printf($score);?></td>
+                  </tr>
+                  <tr>
+                      <td>Upvotes</td>
+                      <td><?php printf($upvote_count);?></td>
+                  </tr>
+                  <tr>
+                    <td>Downvotes</td>
+                    <td><?php printf($downvote_count);?></td>
+                  </tr>
+                </table>
+              </div>
+              </div>
               </div>
 
           <!-- Area Chart Example-->
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-chart-area"></i>
-              Average Watchlist Taint</div>
+              Average Taint</div>
             <div class="card-body">
               <canvas id="myAreaChart" width="100%" height="30"></canvas>
             </div>
@@ -160,14 +176,13 @@
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
-              Watchlist Updates</div>
+              Past Transactions</div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
                       <th>Time</th>
-                      <th>Blockchain</th>
                       <th>Address</th>
                       <th>Action</th>
                       <th>Tx Value</th>
@@ -177,7 +192,6 @@
                   <tfoot>
                     <tr>
                       <th>Time</th>
-                      <th>Blockchain</th>
                       <th>Address</th>
                       <th>Action</th>
                       <th>Tx Value</th>
@@ -187,7 +201,6 @@
                   <tbody>
                     <tr>
                       <td>18/3/19 23:54:55</td>
-                      <td>Ethereum</td>
                       <td><a href>0xf0a1003ec54bd88...</a></td>
                       <td>Send</td>
                       <td>3.11</td>
@@ -195,7 +208,6 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:54:45</td>
-                      <td>Ethereum</td>
                       <td><a href>0x15d3a2c45746f5f8...</a></td>
                       <td>Receive</td>
                       <td>8.02</td>
@@ -203,7 +215,6 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:54:30</td>
-                      <td>Bitcoin</td>
                       <td><a href>0x07b2dff051f2e431...</a></td>
                       <td>Receive</td>
                       <td>0.05</td>
@@ -211,7 +222,6 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:50:09</td>
-                      <td>Bitcoin Cash</td>
                       <td><a href>0x5ed2dc2b94e4a3...</a></td>
                       <td>Receive</td>
                       <td>0.05</td>
@@ -219,15 +229,12 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:45:09</td>
-                      <td>Bitcoin</td>
                       <td><a href>0xb0b2d4ee15d8f2c...</a></td>
-                      <td>Send</td>
                       <td>15.92</td>
                       <td>55</td>
                     </tr>
                     <tr>
                       <td>18/3/19 23:45:05</td>
-                      <td>Bitcoin</td>
                       <td><a href>0x3a7604dfa452383...</a></td>
                       <td>Send</td>
                       <td>0.22</td>
@@ -235,7 +242,6 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:45:09</td>
-                      <td>Bitcoin</td>
                       <td><a href>0xb0b2d4ee15d8f2c...</a></td>
                       <td>Send</td>
                       <td>15.92</td>
@@ -243,7 +249,6 @@
                     </tr>
                     <tr>
                       <td>18/3/19 23:45:09</td>
-                      <td>Litecoin</td>
                       <td><a href>0x8888887c5ede32...</a></td>
                       <td>Receive</td>
                       <td>3.41</td>

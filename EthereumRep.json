@@ -1,0 +1,9 @@
+{
+    "0x123" : {
+        "score" : 1,
+        "upvote" : 1,
+        "downvote" : 0,
+        "upvoters" :[],
+        "downvoters":[]
+    }
+}
