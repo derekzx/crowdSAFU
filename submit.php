@@ -39,7 +39,7 @@
     }
    else{
         if($isUntainted = "1"){
-            $arr_data[$address]["score"]++;
+              $arr_data[$address]["score"]++;
             $arr_data[$address]["upvote"]++;
             array_push($arr_data[$address]["upvoters"], $voter);
         }
