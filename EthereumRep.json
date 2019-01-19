@@ -3,7 +3,7 @@
         "score" : 1,
         "upvote" : 1,
         "downvote" : 0,
-        "upvoters" :[],
+        "upvoters" :["0x453"],
         "downvoters":[]
     }
 }
