@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
 var DESTINATION_ADDRESS = "0x4b43dc3d49476dfc4f49151dd72e9fee07ccb9de";
 
 var SUBMIT_ADDRESS_DEPOSIT = web3.toWei("0.0001", "ether");
-var TRADE_AMOUNT = web3.toWei("0.0001", "ether");
+var TRADE_AMOUNT = web3.toWei("0.0005", "ether");
 
 var REDIRECT_TO = "http://localhost:5000/submit-successful.html";
 

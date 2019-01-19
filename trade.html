@@ -17,26 +17,6 @@
     <link href="./static/sb_admin_4/css/sb-admin.css" rel="stylesheet">
   </head>
   <body id="page-top">
-    <style>
-    .card-body .row {
-    background: white !important;
-    }
-    .blink {
-    background: #eeeeee !important;
-    -webkit-transition: background 1.0s ease-in-out;
-    -moz-transition: background 1.0s ease-in-out;
-    -ms-transition: background 1.0s ease-in-out;
-    transition: background 1.0s ease-in-out;
-    }
-    .smaller-hr {
-    margin-top: 0;
-    margin-bottom: 0;
-    }
-    .col-md-6 p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    }
-    </style>
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
       <a class="navbar-brand mr-1" href="index.html">CrowdSAFU</a>
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -90,7 +70,7 @@
             <span>Dashboard</span>
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-folder"></i>
             <span>Search Tx History</span>
@@ -99,7 +79,7 @@
             <h6 class="dropdown-header">Blockchain Platform:</h6>
             <a class="dropdown-item" href="search.html">Bitcoin</a>
             <a class="dropdown-item" href="search.html">Ethereum</a>
-            <a class="dropdown-item" href="search.html">Bitcoin Cash</a>
+            <a class="dropdown-item" href="search.html">Litecoin</a>
             <a class="dropdown-item" href="search.html">More...</a>
             <!-- <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Other Pages:</h6>
@@ -107,24 +87,24 @@
             <a class="dropdown-item" href="blank.html">Blank Page</a> -->
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-fw fa-folder"></i>
             <span>Submit an address</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">Blockchain Platform:</h6>
-            <a class="dropdown-item" href="search.html">Bitcoin</a>
-            <a class="dropdown-item" href="search.html">Ethereum</a>
-            <a class="dropdown-item" href="search.html">Bitcoin Cash</a>
-            <a class="dropdown-item" href="search.html">More...</a>
+            <a class="dropdown-item" href="submit.html">Bitcoin</a>
+            <a class="dropdown-item" href="submit.html">Ethereum</a>
+            <a class="dropdown-item" href="submit.html">Litecoin</a>
+            <a class="dropdown-item" href="submit.html">More...</a>
             <!-- <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Other Pages:</h6>
             <a class="dropdown-item" href="404.html">404 Page</a>
             <a class="dropdown-item" href="blank.html">Blank Page</a> -->
           </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="trade.html">
             <i class="fas fa-chart-line"></i>
             <span>Trade</span>
@@ -146,225 +126,110 @@
               <!-- Breadcrumbs-->
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Submit an address</a>
+                  <a href="#">Search</a>
                 </li>
-                <li class="breadcrumb-item active">0xab5801a7d398351b8be11c439e05c5b3259aec9b</li>
+                <li class="breadcrumb-item active">Ethereum</li>
               </ol>
-              <!-- Icon Cards-->
-              <!-- <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-3">
-                  <div class="card text-white bg-primary o-hidden h-100">
-                    <div class="card-body">
-                      <div class="card-body-icon">
-                        <i class="fas fa-fw fa-comments"></i>
-                      </div>
-                      <div class="mr-5">26 New Messages!</div>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
-                      <span class="float-right">
-                        <i class="fas fa-angle-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                  <div class="card text-white bg-warning o-hidden h-100">
-                    <div class="card-body">
-                      <div class="card-body-icon">
-                        <i class="fas fa-fw fa-list"></i>
-                      </div>
-                      <div class="mr-5">11 New Tasks!</div>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
-                      <span class="float-right">
-                        <i class="fas fa-angle-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                  <div class="card text-white bg-success o-hidden h-100">
-                    <div class="card-body">
-                      <div class="card-body-icon">
-                        <i class="fas fa-fw fa-shopping-cart"></i>
-                      </div>
-                      <div class="mr-5">123 New Orders!</div>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
-                      <span class="float-right">
-                        <i class="fas fa-angle-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-3">
-                  <div class="card text-white bg-danger o-hidden h-100">
-                    <div class="card-body">
-                      <div class="card-body-icon">
-                        <i class="fas fa-fw fa-life-ring"></i>
-                      </div>
-                      <div class="mr-5">13 New Tickets!</div>
-                    </div>
-                    <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
-                      <span class="float-right">
-                        <i class="fas fa-angle-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div> -->
+             
               
               <div class="container">
                 <div class="row">
                   <!-- <div class="col-xl-9 mx-auto">
                     <h1 class="mb-5">Ethereum Address Search</h1>
                   </div> -->
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
-                  <div class="col-xl-9 mx-5"></div>
                   
-                  <div class="col-md-12 mx-auto">
-                    <div class="container">
-                      <div class="row text-center">
-                        <div class="col-md-12 text-center">
-                          <h3>Trade on address score</h3>
-                        </div>
-                      </div>
-                      <!-- <p>Select the </p> -->
-                      <br><br>
-                      <div class="row">
-                        <div class="col-md-6 mx-auto text-center">
-                          <div class="card">
-                            <div class="card-body">
-                              <h3 class="card-title">Short</h3>
-                              <p class="card-text">Less tainted (Below 50 score)</p>
-                              <div class="row ">
-                                <div class="col-md-6 text-center"><p><strong>SHORT shares</strong></p></div>
-                                <div class="col-md-6 text-center"><p><strong>Price (ETH)</strong></p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.6631</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.8000</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.8500</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.9987</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <br><br>
-                              <div class="text-left">
-                                <h5>Amount <span style="color:gray;font-size: 14px;margin-left: 10px">How many shares do you want to buy?</span></h5>
-                                <input type="text" class="form-control">
-                                <br>
-                                <h5>Share price<span style="color:gray;font-size: 14px;margin-left: 10px">Set price (ETH / share)</span></h5>
-                                <input type="text" class="form-control">
-                              </div>
-                              <hr>
-                              <div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Share Value</div>
-                                  <div class="col-md-6 text-right">15.03318 USD</div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Trading Fee</div>
-                                  <div class="col-md-6 text-right">0.004169 ETH</div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Total</div>
-                                  <div class="col-md-6 text-right">0.42734 ETH</div>
-                                </div>
-                              </div>
-                              <br>
-                              <a href="#" class="trade-btn btn btn-primary">Submit Trade</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 mx-auto text-center">
-                          <div class="card">
-                            <div class="card-body">
-                              <h3 class="card-title">Long</h3>
-                              <p class="card-text">More tainted (Above 50 score)</p>
-                              <div class="row ">
-                                <div class="col-md-6 text-center"><p><strong>LONG shares</strong></p></div>
-                                <div class="col-md-6 text-center"><p><strong>Price (ETH)</strong></p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.3200</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>1.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.3400</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>2.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.8600</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <div class="row blinker">
-                                <div class="col-md-6 text-center"><p>100.000</p></div>
-                                <div class="col-md-6 text-center"><p>0.9820</p></div>
-                              </div>
-                              <hr class="smaller-hr">
-                              <br><br>
-                              <div class="text-left">
-                                <h5>Amount <span style="color:gray;font-size: 14px;margin-left: 10px">How many shares do you want to buy?</span></h5>
-                                <input type="text" class="form-control">
-                                <br>
-                                <h5>Share price<span style="color:gray;font-size: 14px;margin-left: 10px">Set price (ETH / share)</span></h5>
-                                <input type="text" class="form-control">
-                              </div>
-                              <hr>
-                              <div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Share Value</div>
-                                  <div class="col-md-6 text-right">15.03318 USD</div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Trading Fee</div>
-                                  <div class="col-md-6 text-right">0.004169 ETH</div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-6 text-left">Total</div>
-                                  <div class="col-md-6 text-right">0.42734 ETH</div>
-                                </div>
-                              </div>
-                              <br>
-                              <a href="#" class="trade-btn btn btn-primary">Submit Trade</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  
+                  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
                       <br>
                       <br>
-                      <br>
-                    </div>
                     
+                    <form action = "trade_2.html" method = "post">
+                      <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                          <input type="text" name="target_address" class="form-control form-control-lg" placeholder="Enter account address...">
+                        </div>
+                        <div class="col-12 col-md-3">
+                          <button type="submit" class="btn btn-block btn-lg btn-primary">Search</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
+                <br>
+                <br>
+                <br>
+                <div class="card mb-3">
+                    <div class="card-header">
+                      <i class="fas fa-chart-line"></i>
+                    Highest Volume</div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>Blockchain</th>
+                              <th>Address</th>
+                              <th>Volume (BTC)</th>                            
+                            </tr>
+                          </thead>                       
+                          <tbody>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0xf0a1003ec54bd88b0b2d4ee15d8f2c8</a></td>
+                              <td>65.11</td>
+                            </tr>
+                            <tr>
+                              <td>Litecoin</td>
+                              <td><a href>0x15d3a2c45746f5f8b0b2d4ee15d8f2c</a></td>
+                              <td>28.02</td>
+                            </tr>
+                            <tr>
+                              <td>Ethereum</td>
+                              <td><a href>0x5ed2dc2b94e4a3f0a1003ec54bd88</a></td>
+                              <td>10.05</td>
+                            </tr>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0xb0b2d4ee15d8f2c15d3a2c45746f5f8</a></td>
+                              <td>15.92</td>
+                            </tr>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0x3a7604dfa452383b0b2d4ee15d8f2c</a></td>
+                              <td>20.22</td>
+                            </tr>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0xb0b2d4ee15d8f2cb0b2d4ee15d8f2c</a></td>
+                              <td>15.92</td>
+                            </tr>
+                            <tr>
+                              <td>Litecoin</td>
+                              <td><a href>0x8888887c5ede323a7604dfa452383</a></td>
+                              <td>13.41</td>
+                            </tr>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0xb0b2d4ee15d8f2c3a7604dfa452383</a></td>
+                              <td>15.92</td>
+                            </tr>
+                            <tr>
+                              <td>Litecoin</td>
+                              <td><a href>0x8888887c5ede32b0b2d4ee15d8f2c</a></td>
+                              <td>3.41</td>
+                            </tr>
+                            <tr>
+                              <td>Bitcoin</td>
+                              <td><a href>0xb0b2d4ee15d8f2cb0b2d4ee15d8f2c</a></td>
+                              <td>15.92</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="card-footer small text-muted">Updated just now</div>
               </div>
               <!-- /.container-fluid -->
               <!-- Sticky Footer -->
@@ -399,8 +264,12 @@
                   <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
               </div>
+              
             </div>
+            
           </div>
+
+          
           <!-- Bootstrap core JavaScript-->
           <script src="./static/sb_admin_4/vendor/jquery/jquery.min.js"></script>
           <script src="./static/sb_admin_4/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -415,24 +284,5 @@
           <!-- Demo scripts for this page-->
           <script src="./static/sb_admin_4/js/demo/datatables-demo.js"></script>
           <script src="./static/sb_admin_4/js/demo/chart-area-demo.js"></script>
-          <script src="./static/web3.min.js"></script>
-          <script src="./static/main.js"></script>
-          <script>
-          var count = 0
-          // DOES NOTHING FOR 1 SEC
-          setTimeout(function () {
-          var interval = setInterval(function () {
-          
-          $(".blinker").toggleClass(function(){
-          count++
-          return "blink"
-          });
-          
-          if (count == 8)
-          clearInterval(interval);
-          
-          }, 600)
-          }, 500);
-          </script>
         </body>
       </html>
