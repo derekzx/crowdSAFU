@@ -1,9 +1,9 @@
 {
-    "0x123" : {
-        "score" : 1,
-        "upvote" : 1,
-        "downvote" : 0,
-        "upvoters" :["0x453"],
-        "downvoters":[]
-    }
+	"0xab5801a7d398351b8be11c439e05c5b3259aec9b": {
+		"score": 100,
+		"upvote": 1,
+		"downvote": 0,
+		"upvoters": ["0x453"],
+		"downvoters": []
+	}
 }

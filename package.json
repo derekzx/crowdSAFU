@@ -1,0 +1,22 @@
+{
+  "name": "crowdsafu",
+  "version": "1.0.0",
+  "description": "Platform for Crowdsourcing Address Reputations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekzx/crowdSAFU.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekzx/crowdSAFU/issues"
+  },
+  "homepage": "https://github.com/derekzx/crowdSAFU#readme",
+  "dependencies": {
+    "augur.js": "^6.5.1"
+  }
+}
