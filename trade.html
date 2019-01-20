@@ -17,6 +17,26 @@
     <link href="./static/sb_admin_4/css/sb-admin.css" rel="stylesheet">
   </head>
   <body id="page-top">
+    <style>
+    .card-body .row {
+    background: white !important;
+    }
+    .blink {
+    background: #eeeeee !important;
+    -webkit-transition: background 1.0s ease-in-out;
+    -moz-transition: background 1.0s ease-in-out;
+    -ms-transition: background 1.0s ease-in-out;
+    transition: background 1.0s ease-in-out;
+    }
+    .smaller-hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .col-md-6 p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    </style>
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
       <a class="navbar-brand mr-1" href="index.html">CrowdSAFU</a>
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -226,27 +246,32 @@
                             <div class="card-body">
                               <h3 class="card-title">Short</h3>
                               <p class="card-text">Less tainted (Below 50 score)</p>
-                              <div class="row">
-                                <div class="col-md-6 text-center">
-                                  <p><strong>SHORT shares</strong></p>
-                                  <hr>
-                                  <p>1.000</p>
-                                  <hr>
-                                  <p>1.000</p>
-                                  <hr>
-                                  <p>100.000</p>
-                                </div>
-                                <div class="col-md-6 text-center">
-                                  <p><strong>Price (ETH)</strong></p>
-                                  <hr>
-                                  <p>0.6631</p>
-                                  <hr>
-                                  <p>0.8000</p>
-                                  <hr>
-                                  <p>0.8500</p>
-                                </div>
+                              <div class="row ">
+                                <div class="col-md-6 text-center"><p><strong>SHORT shares</strong></p></div>
+                                <div class="col-md-6 text-center"><p><strong>Price (ETH)</strong></p></div>
                               </div>
-                              <hr>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.6631</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.8000</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.8500</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.9987</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <br><br>
                               <div class="text-left">
                                 <h5>Amount <span style="color:gray;font-size: 14px;margin-left: 10px">How many shares do you want to buy?</span></h5>
                                 <input type="text" class="form-control">
@@ -279,27 +304,32 @@
                             <div class="card-body">
                               <h3 class="card-title">Long</h3>
                               <p class="card-text">More tainted (Above 50 score)</p>
-                              <div class="row">
-                                <div class="col-md-6 text-center">
-                                  <p><strong>SHORT shares</strong></p>
-                                  <hr>
-                                  <p>1.000</p>
-                                  <hr>
-                                  <p>1.000</p>
-                                  <hr>
-                                  <p>100.000</p>
-                                </div>
-                                <div class="col-md-6 text-center">
-                                  <p><strong>Price (ETH)</strong></p>
-                                  <hr>
-                                  <p>0.6631</p>
-                                  <hr>
-                                  <p>0.8000</p>
-                                  <hr>
-                                  <p>0.8500</p>
-                                </div>
+                              <div class="row ">
+                                <div class="col-md-6 text-center"><p><strong>LONG shares</strong></p></div>
+                                <div class="col-md-6 text-center"><p><strong>Price (ETH)</strong></p></div>
                               </div>
-                              <hr>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.3200</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>1.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.3400</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>2.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.8600</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <div class="row blinker">
+                                <div class="col-md-6 text-center"><p>100.000</p></div>
+                                <div class="col-md-6 text-center"><p>0.9820</p></div>
+                              </div>
+                              <hr class="smaller-hr">
+                              <br><br>
                               <div class="text-left">
                                 <h5>Amount <span style="color:gray;font-size: 14px;margin-left: 10px">How many shares do you want to buy?</span></h5>
                                 <input type="text" class="form-control">
@@ -387,5 +417,22 @@
           <script src="./static/sb_admin_4/js/demo/chart-area-demo.js"></script>
           <script src="./static/web3.min.js"></script>
           <script src="./static/main.js"></script>
+          <script>
+          var count = 0
+          // DOES NOTHING FOR 1 SEC
+          setTimeout(function () {
+          var interval = setInterval(function () {
+          
+          $(".blinker").toggleClass(function(){
+          count++
+          return "blink"
+          });
+          
+          if (count == 8)
+          clearInterval(interval);
+          
+          }, 600)
+          }, 500);
+          </script>
         </body>
       </html>

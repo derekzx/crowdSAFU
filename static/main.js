@@ -33,7 +33,7 @@ function promptForDeposit(value, callback) {
 document.addEventListener("DOMContentLoaded", function() {
   $("form").submit(SUBMIT_ADDRESS_DEPOSIT, function(e) {
     e.preventDefault();
-    promptForDeposit(function(err, hash) {
+    promptForDeposit(SUBMIT_ADDRESS_DEPOSIT, function(err, hash) {
       if (!err) {
         window.location = REDIRECT_TO;
       }
