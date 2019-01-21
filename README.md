@@ -1,5 +1,4 @@
-# crowdSAFU
-Platform for Crowdsourcing Blockchain (Public Ledger) Address Reputations  
+# CrowdSAFU - Platform for crowdsourcing address reputations
 PoC for Binance Hackathon 2019  
 **Awarded 'Most Creative Product'**
 
