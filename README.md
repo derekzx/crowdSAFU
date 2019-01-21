@@ -1,7 +1,7 @@
 # CrowdSAFU - Platform for crowdsourcing address reputations
 PoC for Binance Hackathon 2019  
 **Awarded 'Most Creative Product'**
-[Pitchdeck](Binance 2019 Hackathon Pitch Deck.pdf)
+[Pitchdeck](/Binance 2019 Hackathon Pitch Deck.pdf)
 
 ## How does this work?
 CrowdSAFU combines different silos of public address reputation through economic incentives (described below)
