@@ -1,6 +1,6 @@
 # crowdSAFU
-Platform for Crowdsourcing Blockchain (Public Ledger) Address Reputations
-PoC for Binance Hackathon 2019
+Platform for Crowdsourcing Blockchain (Public Ledger) Address Reputations  
+PoC for Binance Hackathon 2019  
 **Awarded 'Most Creative Product'**
 
 ## How does this work?
@@ -8,7 +8,7 @@ CrowdSAFU combines different silos of public address reputation through economic
 
 ## Three types of stakeholders
 ### 1. Submitters
-* Submitters are individuals who stake some cryptocurrency to submit the ['taint' value] (https://bitcoin.stackexchange.com/questions/7966/what-are-tainted-coins-exactly) of an address. The initial stake provides liquidity for the trading market for the contributors. This stake will be slashed if a dispute is raised in the end and the arbitrators decide against the submitter's favour.
+* Submitters are individuals who stake some cryptocurrency to submit the ['taint' value](https://bitcoin.stackexchange.com/questions/7966/what-are-tainted-coins-exactly) of an address. The initial stake provides liquidity for the trading market for the contributors. This stake will be slashed if a dispute is raised in the end and the arbitrators decide against the submitter's favour.
 
 ### 2. Contributers
 * Contributors are presented an exchange-like interface where they go long/short on the taint value of an address. 
