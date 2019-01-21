@@ -24,5 +24,5 @@ Eg. Exchanges, Financial Institutions, Individuals who transact frequently etc.
 Chrome extension to allow submitters to submit more easily and queriers to request data more easily
 
 ## Need Clarification? Contact Us:
-* Derek Chin [Github](http://github.com/derekzx), [Twitter - derekzx](http://twitter.com/derekzx), Email: [chinzhixian@gmail.com]( mailto:chinzhixian@gmail.com)
+* Derek Chin [Github](http://github.com/derekzx), [Twitter - fyrezx](http://twitter.com/fyrezx), Email: [chinzhixian@gmail.com]( mailto:chinzhixian@gmail.com)
 * Ken Chan [Twitter - kenchangh](http://twitter.com/kenchangh)
