@@ -1,6 +1,6 @@
 # CrowdSAFU - Platform for crowdsourcing address reputations
 PoC for Binance Hackathon 2019  
-**Awarded 'Most Creative Product'**
+**Awarded 'Most Creative Product'**  
 [Pitchdeck](https://github.com/derekzx/crowdSAFU/blob/master/Binance%202019%20Hackathon%20Pitch%20Deck.pdf)
 
 ## How does this work?
