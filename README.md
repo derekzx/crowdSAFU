@@ -1,6 +1,7 @@
 # CrowdSAFU - Platform for crowdsourcing address reputations
 PoC for Binance Hackathon 2019  
 **Awarded 'Most Creative Product'**
+[Pitchdeck](Binance 2019 Hackathon Pitch Deck.pdf)
 
 ## How does this work?
 CrowdSAFU combines different silos of public address reputation through economic incentives (described below)
@@ -23,5 +24,5 @@ Eg. Exchanges, Financial Institutions, Individuals who transact frequently etc.
 Chrome extension to allow submitters to submit more easily and queriers to request data more easily
 
 ## Need Clarification? Contact Us:
-* Derek Chin [Github](github.com/derekzx), [Twitter - derekzx](twitter.com/derekzx), Email: [chinzhixian@gmail.com]( mailto:chinzhixian@gmail.com)
-* Ken Chan [Twitter - kenchangh](twitter.com/kenchangh)
+* Derek Chin [Github](http://github.com/derekzx), [Twitter - derekzx](http://twitter.com/derekzx), Email: [chinzhixian@gmail.com]( mailto:chinzhixian@gmail.com)
+* Ken Chan [Twitter - kenchangh](http://twitter.com/kenchangh)
